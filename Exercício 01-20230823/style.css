@@ -1,0 +1,183 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f0f;
+}
+
+main {
+    width: 1200px;
+    background-color: #b4b4b4;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nome {
+    margin-top: 20px;
+    color: #2e2e2e;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 100%;
+}
+
+main .nome div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: .7em;
+}
+
+.foto {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.foto img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px #888888;
+}
+
+.texto-biografia {
+    width: 800px;
+    font-size: 14px;
+}
+
+.timeline {
+    margin-top: 20px;
+    width: 800px;
+    font-size: 14px;
+}
+
+.texto-biografia h1,
+.timeline h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.ano {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #353535;
+    margin-bottom: 8px;
+
+    transition: all .2s ease;
+}
+
+.ano:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #1a1a1a;
+    border: 1px solid #000;
+    color: #ececec;
+}
+
+.ano span {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #5066e2;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.informacoes,
+.fontes {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.informacoes a,
+.fontes a {
+    color: #3f489e;
+}
+
+.informacoes a:hover,
+.fontes a:hover {
+    color: #282e63;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0f0f0f;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 {
+    color: #969696;
+    font-style: italic;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 11px;
+
+    transition: all .2s ease;
+}
+
+footer img {
+    width: 60px;
+    transition: all .2s ease;
+}
+
+footer h2:hover {
+    color: #636363;
+}
+
+footer img:hover {
+    transform: scale(1.08);
+}
+
+footer .github {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .nome {
+        max-width: 320px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    main .nome div {
+        font-size: .6em;
+    }
+
+    .foto img {
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+        box-shadow: 0px 0px 15px #888888;
+    }
+
+    .texto-biografia,
+    .timeline {
+        max-width: 320px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
